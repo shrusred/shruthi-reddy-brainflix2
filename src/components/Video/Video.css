@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "Avenir_reg";
+  src: url("../../assets/Font/Alternativefiles/AvenirNextLTPro.ttf") format("TrueType");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Avenir_bold";
+  src: url("../../assets/Font/Alternativefiles/AvenirNextLTProBold.ttf") format("TrueType");
+  font-weight: 700;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .video {
+    margin-top: 24px;
+  }
+  .video__activevideo {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 98vw;
+    height: 50vh;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .video {
+    width: 100vw;
+    height: 90vh;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 36px;
+    box-sizing: border-box;
+  }
+  .video__activevideo {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100vw;
+    height: 90vh;
+  }
+}
+@media (min-width: 1280px) {
+  .video {
+    width: 100vw;
+    height: 90vh;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 36px;
+    box-sizing: border-box;
+  }
+  .video__activevideo {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100vw;
+    height: 90vh;
+  }
+}/*# sourceMappingURL=Video.css.map */

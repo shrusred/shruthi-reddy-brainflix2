@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "Avenir_reg";
+  src: url("../../assets/Font/Alternativefiles/AvenirNextLTPro.ttf") format("TrueType");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Avenir_bold";
+  src: url("../../assets/Font/Alternativefiles/AvenirNextLTProBold.ttf") format("TrueType");
+  font-weight: 700;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .header {
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    height: 10vh;
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .header__logo {
+    height: 70%;
+    width: 60%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .header {
+    box-sizing: border-box;
+    margin-left: 36px;
+    margin-right: 36px;
+    padding: 0;
+    height: 10vh;
+    width: 30vw;
+    margin-top: 3vh;
+  }
+  .header__logo {
+    box-sizing: border-box;
+    height: 100%;
+    width: 60%;
+  }
+}
+@media (min-width: 1280px) {
+  .header {
+    box-sizing: border-box;
+    margin-left: 36px;
+    margin-right: 36px;
+    padding: 0;
+    margin-top: 16px;
+    height: 10vh;
+    width: 30vw;
+  }
+  .header__logo {
+    box-sizing: border-box;
+    height: 100%;
+    width: 50%;
+  }
+}/*# sourceMappingURL=Header.css.map */

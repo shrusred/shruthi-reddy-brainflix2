@@ -1,0 +1,44 @@
+@use '../../styles/partials/breakpoints' as *;
+@use '../../styles/partials/colors' as *;
+@use '../../styles/partials/fonts' as *;
+@use '../../styles/partials/global' as *;
+@use '../../styles/partials/mixins' as *;
+
+.video{
+    @include mob{
+        margin-top: 24px;
+        &__activevideo{
+            object-fit: cover;
+            width:98vw;
+            height:50vh;
+        }
+    }
+    @include tab{
+        
+        width:100vw;
+        height:90vh;
+        margin-left: 24px;
+        margin-right: 24px;
+        margin-bottom: 36px;
+        box-sizing: border-box;
+        &__activevideo{
+            object-fit: cover;
+            width:100vw;
+            height:90vh;
+        }
+    }
+    @include des{
+        width:100vw;
+        height:90vh;
+        margin-left: 24px;
+        margin-right: 24px;
+        margin-bottom: 36px;
+        box-sizing: border-box;
+        &__activevideo{
+            object-fit: cover;
+            width:100vw;
+            height:90vh;
+        }
+        
+    }
+}

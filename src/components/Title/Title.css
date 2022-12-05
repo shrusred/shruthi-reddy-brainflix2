@@ -1,0 +1,267 @@
+@font-face {
+  font-family: "Avenir_reg";
+  src: url("../../assets/Font/Alternativefiles/AvenirNextLTPro.ttf") format("TrueType");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Avenir_bold";
+  src: url("../../assets/Font/Alternativefiles/AvenirNextLTProBold.ttf") format("TrueType");
+  font-weight: 700;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .title__heading {
+    border-bottom: 2px solid #e1e1e1;
+    margin-left: 3vw;
+    margin-top: 26px;
+    font-size: 28px;
+    font-family: "Avenir_bold";
+    padding-bottom: 16px;
+    padding-right: 50%;
+    box-sizing: border-box;
+    line-height: 32px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .title {
+    width: 100vw;
+    height: 15vh;
+    padding: 0;
+    box-sizing: border-box;
+    border-bottom: 2px solid #e1e1e1;
+    margin-left: 1.5rem;
+  }
+  .title__heading {
+    margin-left: 24px;
+    margin-top: 26px;
+    font-size: 32px;
+    font-family: "Avenir_bold";
+    box-sizing: border-box;
+    line-height: 32px;
+  }
+}
+@media (min-width: 1280px) {
+  .title {
+    width: 55vw;
+    height: 10vh;
+    border-bottom: 2px solid #e1e1e1;
+    margin-left: 3vw;
+  }
+  .title__heading {
+    margin-top: 26px;
+    font-size: 32px;
+    font-family: "Avenir_bold";
+    box-sizing: border-box;
+    line-height: 32px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .title .subtitle {
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    width: 98%;
+    height: 20vh;
+    border-bottom: 2px solid #e1e1e1;
+    margin-bottom: 50px;
+    margin-left: 3vw;
+  }
+  .title .subtitle__uploader {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 0 2vh 0;
+    padding: 0 0 0 0.5vw;
+    box-sizing: border-box;
+    width: 45%;
+    height: 7vh;
+    font-size: 1rem;
+    color: #323232;
+    font-family: "Avenir_reg";
+    font-weight: 700;
+  }
+  .title .subtitle__uploaddate {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    padding: 0 0 0 0.5vw;
+    box-sizing: border-box;
+    width: 45%;
+    height: 7vh;
+    font-size: 1rem;
+    color: #AFAFAF;
+    font-family: "Avenir_reg";
+    font-weight: 700;
+  }
+  .title .subtitle__views {
+    margin: 0 0 2vh 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 45%;
+    height: 45%;
+  }
+  .title .subtitle__views--number {
+    font-size: 1rem;
+    margin: 1vw;
+    color: #AFAFAF;
+    font-family: "Avenir_reg";
+    font-weight: 700;
+  }
+  .title .subtitle__views--icon {
+    height: 2rem;
+    width: 2rem;
+    color: #AFAFAF;
+  }
+  .title .subtitle__likes {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 45%;
+    height: 45%;
+  }
+  .title .subtitle__likes--number {
+    font-size: 1rem;
+    margin: 1.5vw;
+    color: #AFAFAF;
+    font-family: "Avenir_reg";
+    font-weight: 700;
+  }
+  .title .subtitle__likes--icon {
+    height: 1.7rem;
+    width: 1.7rem;
+    color: #AFAFAF;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .title .subtitle {
+    height: 7vh;
+    width: 98vw;
+    margin-left: 24px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  .title .subtitle__uploader {
+    margin: 1.5vh 0 0 -1px;
+    position: absolute;
+  }
+  .title .subtitle__views {
+    height: 3vh;
+    width: 3vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    left: 50vw;
+  }
+  .title .subtitle__views--number {
+    height: 100%;
+    width: 50%;
+    box-sizing: border-box;
+    margin-left: 1rem;
+    margin-top: 1vh;
+  }
+  .title .subtitle__views--icon {
+    height: 2rem;
+    width: 2rem;
+    color: #AFAFAF;
+  }
+  .title .subtitle__likes {
+    height: 3vh;
+    width: 3vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    left: 70vw;
+  }
+  .title .subtitle__likes--number {
+    height: 100%;
+    width: 50%;
+    box-sizing: border-box;
+    margin-left: 1rem;
+    margin-top: 1vh;
+  }
+  .title .subtitle__likes--icon {
+    height: 2rem;
+    width: 2rem;
+    color: #AFAFAF;
+  }
+  .title .subtitle__uploaddate {
+    margin: 1.5vh 0 0 -50px;
+    position: absolute;
+    left: 20vw;
+  }
+}
+@media (min-width: 1280px) {
+  .title .subtitle {
+    height: 7vh;
+    width: 55vw;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    box-sizing: border-box;
+  }
+  .title .subtitle__uploader {
+    margin: 1.5vh 0 0 0;
+    position: absolute;
+  }
+  .title .subtitle__views {
+    height: 5vh;
+    width: 10vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    left: 20vw;
+    top: 0.5vh;
+  }
+  .title .subtitle__views--number {
+    height: 100%;
+    width: 50%;
+    box-sizing: border-box;
+    margin: 0.5vh 0 0 0;
+  }
+  .title .subtitle__views--icon {
+    height: 2rem;
+    width: 2rem;
+    color: #AFAFAF;
+  }
+  .title .subtitle__likes {
+    height: 5vh;
+    width: 10vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    left: 35vw;
+    top: 0.5vh;
+  }
+  .title .subtitle__likes--number {
+    height: 100%;
+    width: 50%;
+    box-sizing: border-box;
+    margin: 0.5vh 0 0 0;
+  }
+  .title .subtitle__likes--icon {
+    height: 2rem;
+    width: 2rem;
+    color: #AFAFAF;
+  }
+  .title .subtitle__uploaddate {
+    margin: 1.5vh 0 0 -10vw;
+    position: absolute;
+    left: 20vw;
+  }
+}/*# sourceMappingURL=Title.css.map */

@@ -1,0 +1,311 @@
+@font-face {
+  font-family: "Avenir_reg";
+  src: url("../../assets/Font/Alternativefiles/AvenirNextLTPro.ttf") format("TrueType");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Avenir_bold";
+  src: url("../../assets/Font/Alternativefiles/AvenirNextLTProBold.ttf") format("TrueType");
+  font-weight: 700;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .commentadd {
+    margin: -5vh 0 0 3vw;
+    border-bottom: 2px solid #e1e1e1;
+  }
+  .commentadd__commentlength {
+    font-family: "Avenir_reg";
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+    line-height: 18px;
+  }
+  .commentadd__title {
+    font-family: "Avenir_reg";
+    margin: 0 0 0 13vw;
+    font-size: 18px;
+    color: #AFAFAF;
+    font-weight: 700;
+  }
+  .commentadd__displaypic {
+    height: 10vh;
+    width: 10vh;
+    border-radius: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .commentadd__submitform {
+    width: 70vw;
+    height: 35vh;
+    margin: -8vh 0 1.5rem 13vw;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .commentadd__submitform--input {
+    background-color: #fafafa;
+    width: 80%;
+    border-radius: 4px;
+    height: 65%;
+    position: relative;
+    border: 1px solid #e1e1e1;
+  }
+  .commentadd__submitform--input::-moz-placeholder {
+    position: absolute;
+    font-family: "Avenir_reg";
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    padding: 0 0 0 0;
+    vertical-align: top;
+    margin: 0;
+    top: 1vh;
+    left: 2vw;
+  }
+  .commentadd__submitform--input:-ms-input-placeholder {
+    position: absolute;
+    font-family: "Avenir_reg";
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    padding: 0 0 0 0;
+    vertical-align: top;
+    margin: 0;
+    top: 1vh;
+    left: 2vw;
+  }
+  .commentadd__submitform--input::placeholder {
+    position: absolute;
+    font-family: "Avenir_reg";
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    padding: 0 0 0 0;
+    vertical-align: top;
+    margin: 0;
+    top: 1vh;
+    left: 2vw;
+  }
+  .commentadd__submitform--button {
+    border: 2px dotted green;
+    width: 80%;
+    height: 20%;
+    margin: 16px 0 0 0;
+    border-radius: 4px;
+    background-color: #0095ff;
+    color: #FFFFFF;
+    font-family: "Avenir_reg";
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .commentadd__submitform--buttonicon {
+    height: 4vh;
+    width: 4vw;
+    margin: 0 0 0 0;
+    position: absolute;
+    left: 5vw;
+    top: 29vh;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .commentadd {
+    margin-left: 1.5rem;
+    height: 20vh;
+    width: 100vw;
+    border-bottom: 2px solid #e1e1e1;
+    margin-bottom: 1.5rem;
+    padding-bottom: 36px;
+  }
+  .commentadd__commentlength {
+    font-family: "Avenir_reg";
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+    line-height: 18px;
+  }
+  .commentadd__title {
+    font-family: "Avenir_reg";
+    margin-left: 10vw;
+    font-size: 18px;
+    color: #AFAFAF;
+    font-weight: 700;
+  }
+  .commentadd__displaypic {
+    height: 7vh;
+    width: 7vh;
+    border-radius: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .commentadd__submitform {
+    padding: 0;
+    width: 80vw;
+    height: 7vh;
+    margin: -7vh 0 0 10vw;
+    position: relative;
+  }
+  .commentadd__submitform--input {
+    background-color: #fafafa;
+    width: 45vw;
+    border-radius: 4px;
+    height: 100%;
+    border: 1px solid #e1e1e1;
+  }
+  .commentadd__submitform--input::-moz-placeholder {
+    font-family: "Avenir_reg";
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    padding: 0 0 0 1vw;
+    vertical-align: top;
+    margin: 0;
+    top: 1vh;
+    left: 2vw;
+  }
+  .commentadd__submitform--input:-ms-input-placeholder {
+    font-family: "Avenir_reg";
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    padding: 0 0 0 1vw;
+    vertical-align: top;
+    margin: 0;
+    top: 1vh;
+    left: 2vw;
+  }
+  .commentadd__submitform--input::placeholder {
+    font-family: "Avenir_reg";
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    padding: 0 0 0 1vw;
+    vertical-align: top;
+    margin: 0;
+    top: 1vh;
+    left: 2vw;
+  }
+  .commentadd__submitform--button {
+    padding: 0;
+    width: 25vw;
+    height: 100%;
+    margin: -7vh 0 0 7vw;
+    border-radius: 4px;
+    background-color: #0095ff;
+    color: #FFFFFF;
+    font-family: "Avenir_reg";
+    font-size: 16px;
+    font-weight: 700;
+    box-sizing: border-box;
+    border: none;
+  }
+  .commentadd__submitform--buttonicon {
+    position: absolute;
+    left: 2vw;
+    top: 59vh;
+    padding: 0;
+    height: 4vh;
+    width: 4vw;
+    margin: -500px 0 0 54vw;
+  }
+}
+@media (min-width: 1280px) {
+  .commentadd {
+    margin-left: 3vw;
+    height: 15vh;
+    width: 55vw;
+    border-bottom: 2px solid #e1e1e1;
+    margin-bottom: 1.5rem;
+    padding-bottom: 36px;
+  }
+  .commentadd__commentlength {
+    font-family: "Avenir_reg";
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+    line-height: 18px;
+  }
+  .commentadd__title {
+    font-family: "Avenir_reg";
+    margin-left: 7vw;
+    font-size: 18px;
+    color: #AFAFAF;
+    font-weight: 700;
+  }
+  .commentadd__displaypic {
+    height: 6vh;
+    width: 6vh;
+    border-radius: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .commentadd__submitform {
+    padding: 0;
+    width: 50vw;
+    height: 6vh;
+    margin: -7vh 0 0 7vw;
+    position: relative;
+  }
+  .commentadd__submitform--input {
+    background-color: #fafafa;
+    width: 25vw;
+    border-radius: 4px;
+    height: 100%;
+    border: 1px solid #e1e1e1;
+  }
+  .commentadd__submitform--input::-moz-placeholder {
+    font-family: "Avenir_reg";
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    padding: 0 0 0 1vw;
+    vertical-align: top;
+    margin: 0;
+    top: 1vh;
+    left: 2vw;
+  }
+  .commentadd__submitform--input:-ms-input-placeholder {
+    font-family: "Avenir_reg";
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    padding: 0 0 0 1vw;
+    vertical-align: top;
+    margin: 0;
+    top: 1vh;
+    left: 2vw;
+  }
+  .commentadd__submitform--input::placeholder {
+    font-family: "Avenir_reg";
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    padding: 0 0 0 1vw;
+    vertical-align: top;
+    margin: 0;
+    top: 1vh;
+    left: 2vw;
+  }
+  .commentadd__submitform--button {
+    padding: 0;
+    width: 17vw;
+    height: 100%;
+    margin: -7vh 0 0 2vw;
+    border-radius: 4px;
+    background-color: #0095ff;
+    color: #FFFFFF;
+    font-family: "Avenir_reg";
+    font-size: 16px;
+    font-weight: 700;
+    box-sizing: border-box;
+    border: none;
+  }
+  .commentadd__submitform--buttonicon {
+    position: absolute;
+    left: 29vw;
+    top: 36vh;
+    padding: 0;
+    height: 2vh;
+    width: 2vh;
+    margin: -31.25rem 0 0 0;
+  }
+}/*# sourceMappingURL=Comment.css.map */

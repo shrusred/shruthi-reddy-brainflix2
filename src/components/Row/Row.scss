@@ -1,0 +1,116 @@
+@use '../../styles/partials/breakpoints' as *;
+@use '../../styles/partials/colors' as *;
+@use '../../styles/partials/fonts' as *;
+@use '../../styles/partials/global' as *;
+@use '../../styles/partials/mixins' as *;
+
+.row{
+    @include mob{
+        display: flex;
+        flex-direction: row;
+        width:95vw;
+        height:10vh;
+        justify-content:space-around;
+        margin-top:16px;
+        padding: 0;
+        box-sizing: border-box;
+        &__search{
+            width:65vw;
+            height:8vh;
+            background-image: url(../../assets/Icons/search.svg);
+            background-repeat: no-repeat;
+            background-position-x:2vw;
+            background-position-y: center;
+            padding-left: 8vw;
+            border: 2px solid $mercury;
+            border-radius: 4px;
+            margin: 0;
+            
+        }
+        &__displaypicbox{
+            margin: 0;
+            height:9vh;
+            width:9vh;
+            border-radius: 50%;
+            background-image: url('../../assets/Images/Mohan-muruge.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+
+    @include tab{
+        margin:-10vh 0 36px 0;
+        padding:0 36px 0 0;
+        width:65vw;
+        height:10vh;
+       
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        float:right;
+        box-sizing: border-box;
+        
+        &__displaypicbox{
+            height:9vh;
+            width:9vh;
+            border-radius: 50%;
+            background-image: url('../../assets/Images/Mohan-muruge.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        &__search{
+            width:15vw;
+            height:8vh;
+            background-image: url(../../assets/Icons/search.svg);
+            background-repeat: no-repeat;
+            background-position-x:2vw;
+            background-position-y: center;
+            padding-left: 8vw;
+            border: 2px solid $mercury;
+            border-radius: 4px;
+            margin: 0;
+        }
+    }
+
+    @include des{
+        margin:-8vh 5vw 36px 0;
+        padding:0;
+        width:60vw;
+        height:8vh;
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        float:right;
+        
+        &__displaypicbox{
+            height:7vh;
+            width:7vh;
+            border-radius: 50%;
+            background-image: url('../../assets/Images/Mohan-muruge.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        &__search{
+            width:17vw;
+            height:7vh;
+            background-image: url(../../assets/Icons/search.svg);
+            background-repeat: no-repeat;
+            background-position-x:2vw;
+            background-position-y: center;
+            padding-left: 8vw;
+            border: 2px solid $mercury;
+            border-radius: 4px;
+            margin: 0;
+        }
+        &__search::placeholder{
+            font-family: 'Avenir_reg';
+            font-size: 26px;
+        }
+    }
+}
+
+  

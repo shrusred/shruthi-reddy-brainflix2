@@ -1,0 +1,66 @@
+@use '../../styles/partials/breakpoints' as *;
+@use '../../styles/partials/colors' as *;
+@use '../../styles/partials/fonts' as *;
+@use '../../styles/partials/global' as *;
+@use '../../styles/partials/mixins' as *;
+
+@mixin mob_margin_header {
+   box-sizing: border-box;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 0;
+  }
+
+@mixin tab_margin_header {
+   box-sizing: border-box;
+   margin-left: 36px;
+   margin-right: 36px;
+   padding: 0;
+}
+
+@mixin des_margin_header {
+    box-sizing: border-box;
+    margin-left: 36px;
+    margin-right: 36px;
+    padding: 0;
+    margin-top: 16px;
+ }
+
+.header{
+    @include mob{
+        @include mob_margin_header;
+        height:10vh;
+        width:70vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        &__logo{
+            height:70%;
+            width: 60%;
+        }
+    }
+    @include tab{
+        @include tab_margin_header;
+        height:10vh;
+        width:30vw;
+        margin-top: 3vh;
+      
+        &__logo{
+            box-sizing: border-box;
+            height:100%;
+            width:60%;
+           
+        }
+    }
+    @include des{
+        @include des_margin_header;
+        height:10vh;
+        width:30vw; 
+        &__logo{
+            box-sizing: border-box;
+            height:100%;
+            width:50%;  
+        }
+    }
+}

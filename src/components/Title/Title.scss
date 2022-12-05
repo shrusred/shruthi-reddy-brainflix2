@@ -1,0 +1,275 @@
+@use '../../styles/partials/breakpoints' as *;
+@use '../../styles/partials/colors' as *;
+@use '../../styles/partials/fonts' as *;
+@use '../../styles/partials/global' as *;
+@use '../../styles/partials/mixins' as *;
+
+.title{
+    @include mob{
+        &__heading{
+            border-bottom: 2px solid $mercury;
+            margin-left: 3vw;
+            margin-top: 26px;
+            font-size: 28px;
+            font-family: 'Avenir_bold';
+            padding-bottom: 16px;
+            padding-right: 50%;
+            box-sizing: border-box;
+            line-height: 32px;
+        }
+    }
+
+    @include tab{
+        width:100vw;
+        height:15vh;
+        padding: 0;
+        box-sizing: border-box;
+        border-bottom: 2px solid $mercury;
+        margin-left: 1.5rem;
+        &__heading{
+            margin-left: 24px;
+            margin-top: 26px;
+            font-size: 32px;
+            font-family: 'Avenir_bold';
+            box-sizing: border-box;
+            line-height: 32px;
+        }
+    }
+
+
+    @include des{
+        width:55vw;
+        height:10vh;
+        border-bottom: 2px solid $mercury;
+        margin-left: 3vw;
+        &__heading{
+            margin-top: 26px;
+            font-size: 32px;
+            font-family: 'Avenir_bold';
+            box-sizing: border-box;
+            line-height: 32px;
+        }
+}
+
+.subtitle{
+    @include mob{
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        width:98%;
+        height:20vh;
+        border-bottom: 2px solid $mercury;
+        margin-bottom: 50px;
+        margin-left: 3vw;
+        &__uploader{
+            display: flex;
+            flex-direction: row;
+            justify-content:flex-start;
+            align-items: center;
+            margin: 0 0 2vh 0;
+            padding: 0 0 0 0.5vw;
+            box-sizing: border-box;
+            width:45%;
+            height:7vh;
+           
+            font-size: 1rem;
+            color: $brainflix-black;
+            font-family: 'Avenir_reg';
+            font-weight: 700;
+        }
+        &__uploaddate{
+            display: flex;
+            flex-direction: row;
+            justify-content:flex-start;
+            align-items: center;
+            margin: 0;
+            padding: 0 0 0 0.5vw;
+            box-sizing: border-box;
+            width:45%;
+            height:7vh;
+            
+            font-size: 1rem;
+            color: $silver;
+            font-family: 'Avenir_reg';
+            font-weight: 700;
+        }
+        &__views{
+            margin: 0 0 2vh 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            justify-content:flex-start;
+            align-items: center;
+            width:45%;
+            height:45%;
+           
+            &--number{
+                font-size: 1rem;
+              
+                margin:1vw;
+                color: $silver;
+                font-family: 'Avenir_reg';
+                font-weight: 700;
+            }
+            &--icon{
+                height:2rem;
+                width:2rem;
+               
+                color: $silver;
+            }
+        }
+        &__likes{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            justify-content:flex-start;
+            align-items: center;
+            width:45%;
+            height:45%;
+            
+            &--number{
+                font-size: 1rem;
+                
+                margin:1.5vw;
+                color: $silver;
+                font-family: 'Avenir_reg';
+                font-weight: 700;
+            }
+            &--icon{
+                height:1.7rem;
+                width:1.7rem;
+                
+                color: $silver;
+            }
+        }
+    }
+
+
+    @include tab{
+        height:7vh;
+        width:98vw;
+        margin-left: 24px;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+
+        &__uploader{
+            margin: 1.5vh 0 0 -1px;
+            position:absolute;
+        }
+        &__views{
+            height:3vh;
+            width: 3vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            position:absolute;
+            left:50vw;
+            &--number{
+                height:100%;
+                width:50%;
+                box-sizing: border-box;
+                margin-left: 1rem;
+                margin-top: 1vh;
+            }
+            &--icon{
+                height:2rem;
+                width:2rem;
+                color: $silver;
+            }
+        }
+        &__likes{
+            height:3vh;
+            width: 3vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            position:absolute;
+            left:70vw;
+            &--number{
+                height:100%;
+                width:50%;
+                box-sizing: border-box;
+                margin-left: 1rem;
+                margin-top: 1vh;
+            }
+            &--icon{
+                height:2rem;
+                width:2rem;
+                color: $silver;
+            }
+
+        }
+        &__uploaddate{
+            margin: 1.5vh 0 0 -50px;
+            position:absolute;
+            left:20vw;
+        }
+    }
+
+    @include des{
+        height:7vh;
+        width:55vw;
+        
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        box-sizing: border-box;
+        &__uploader{
+            margin: 1.5vh 0 0 0;
+            position:absolute;
+        }
+        &__views{
+            height:5vh;
+            width: 10vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            position:absolute;
+            left:20vw;
+            top:0.5vh;
+            &--number{
+                height:100%;
+                width:50%;
+                box-sizing: border-box;
+                margin: 0.5vh 0 0 0;
+            }
+            &--icon{
+                height:2rem;
+                width:2rem;
+                color: $silver;
+            }
+        }
+        &__likes{
+            height:5vh;
+            width: 10vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            position:absolute;
+            left:35vw;
+            top:0.5vh;
+            &--number{
+                height:100%;
+                width:50%;
+                box-sizing: border-box;
+                margin: 0.5vh 0 0 0;
+            }
+            &--icon{
+                height:2rem;
+                width:2rem;
+                color: $silver;
+            }
+        }
+        &__uploaddate{
+            margin: 1.5vh 0 0 -10vw;
+            position:absolute;
+            left:20vw;
+        }
+    }
+}
+}

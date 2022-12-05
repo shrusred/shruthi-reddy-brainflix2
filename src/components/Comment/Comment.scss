@@ -1,0 +1,261 @@
+@use '../../styles/partials/breakpoints' as *;
+@use '../../styles/partials/colors' as *;
+@use '../../styles/partials/fonts' as *;
+@use '../../styles/partials/global' as *;
+@use '../../styles/partials/mixins' as *;
+
+.commentadd{
+    @include mob{
+        margin: -5vh 0 0 3vw;
+        border-bottom: 2px solid $mercury;
+        &__commentlength{
+            font-family: "Avenir_reg";
+            font-weight: 700;
+            font-size: 20px;
+            color:$brainflix-darkblack;
+            line-height: 18px;
+        }
+        &__title{
+            font-family: 'Avenir_reg';
+            margin: 0 0 0 13vw;
+            font-size: 18px;
+            color:$silver;
+            font-weight: 700;
+        }
+        &__displaypic{
+            height:10vh;
+            width:10vh;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        &__submitform{
+            width:70vw;
+            height:35vh;
+            margin: -8vh 0 1.5rem 13vw;
+            display:flex;
+            flex-wrap: wrap;
+            position: relative;
+
+            &--input{
+                background-color: $alabaster;
+                width:80%;
+                border-radius: 4px;
+                height:65%;
+                position: relative;
+                border: 1px solid $mercury;
+            }
+            &--input::placeholder{
+                position: absolute;
+                font-family: 'Avenir_reg';
+                font-size: 16px;
+                font-weight: 500;
+                color: $brainflix-darkblack;
+                padding: 0 0 0 0;
+                vertical-align: top;
+                margin: 0;
+                top:1vh;
+                left:2vw;
+            }
+            &--button{
+                border: 2px dotted green;
+                width:80%;
+                height:20%;
+                margin: 16px 0 0 0;
+                border-radius: 4px;
+                background-color: $brainflix-blue;
+                color:$white;
+                font-family: 'Avenir_reg';
+                font-size: 16px;
+                font-weight: 700;
+            }
+            &--buttonicon{
+                height:4vh;
+                width:4vw;
+                margin:0 0 0 0;
+                position: absolute;
+                left:5vw;
+                top: 29vh;
+            }            
+        }
+    }
+
+
+
+
+
+
+
+    @include tab{
+        margin-left: 1.5rem;
+        height:20vh;
+        width:100vw;
+        border-bottom: 2px solid $mercury;
+        margin-bottom: 1.5rem;
+        padding-bottom: 36px;
+        
+
+        &__commentlength{
+            font-family: "Avenir_reg";
+            font-weight: 700;
+            font-size: 20px;
+            color:$brainflix-darkblack;
+            line-height: 18px;
+            
+        }
+        &__title{
+            font-family: 'Avenir_reg';
+            margin-left:10vw;
+            font-size: 18px;
+            color:$silver;
+            font-weight: 700;
+        }
+        &__displaypic{
+            height:7vh;
+            width:7vh;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        &__submitform{
+            padding:0;
+            width:80vw;
+            height:7vh;
+            margin: -7vh 0 0 10vw;
+            position: relative;
+            &--input{
+                background-color: $alabaster;
+                width:45vw;
+                border-radius: 4px;
+                height:100%;
+                border: 1px solid $mercury;
+            }
+            &--input::placeholder{
+               
+                font-family: 'Avenir_reg';
+                font-size: 16px;
+                font-weight: 500;
+                color: $brainflix-darkblack;
+                padding: 0 0 0 1vw;
+                vertical-align: top;
+                margin: 0;
+                top:1vh;
+                left:2vw;
+            }
+            &--button{
+                padding: 0;
+                width:25vw;
+                height:100%;
+                margin: -7vh 0 0 7vw;
+                border-radius: 4px;
+                background-color: $brainflix-blue;
+                color:$white;
+                font-family: 'Avenir_reg';
+                font-size: 16px;
+                font-weight: 700;
+                box-sizing: border-box;
+                border: none;
+               
+            }
+            &--buttonicon{
+                position: absolute;
+                left:2vw;
+                top:59vh;
+                padding: 0;
+                height:4vh;
+                width:4vw;
+                margin:-500px 0 0 54vw;  
+            }            
+        }
+    }
+
+
+
+
+
+
+
+
+    @include des{
+        margin-left: 3vw;
+        height:15vh;
+        width:55vw;
+        border-bottom: 2px solid $mercury;
+        margin-bottom: 1.5rem;
+        padding-bottom: 36px;
+        
+
+        &__commentlength{
+            font-family: "Avenir_reg";
+            font-weight: 700;
+            font-size: 20px;
+            color:$brainflix-darkblack;
+            line-height: 18px;
+            
+        }
+        &__title{
+            font-family: 'Avenir_reg';
+            margin-left:7vw;
+            font-size: 18px;
+            color:$silver;
+            font-weight: 700;
+        }
+        &__displaypic{
+            height:6vh;
+            width:6vh;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        &__submitform{
+            padding:0;
+            width:50vw;
+            height:6vh;
+            margin: -7vh 0 0 7vw;
+            position: relative;
+           
+            &--input{
+                background-color: $alabaster;
+                width:25vw;
+                border-radius: 4px;
+                height:100%;
+                border: 1px solid $mercury;
+            }
+            &--input::placeholder{
+               
+                font-family: 'Avenir_reg';
+                font-size: 16px;
+                font-weight: 500;
+                color: $brainflix-darkblack;
+                padding: 0 0 0 1vw;
+                vertical-align: top;
+                margin: 0;
+                top:1vh;
+                left:2vw;
+            }
+            &--button{
+                padding: 0;
+                width:17vw;
+                height:100%;
+                margin: -7vh 0 0 2vw;
+                border-radius: 4px;
+                background-color: $brainflix-blue;
+                color:$white;
+                font-family: 'Avenir_reg';
+                font-size: 16px;
+                font-weight: 700;
+                box-sizing: border-box;
+                border: none;
+               
+            }
+            &--buttonicon{
+                position: absolute;
+                left:29vw;
+                top:36vh;
+                padding: 0;
+                height:2vh;
+                width:2vh;
+                margin:-31.25rem 0 0 0; 
+               
+                
+            }            
+        }
+    }
+}

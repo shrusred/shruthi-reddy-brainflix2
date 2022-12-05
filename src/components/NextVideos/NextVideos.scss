@@ -1,0 +1,175 @@
+@use '../../styles/partials/breakpoints' as *;
+@use '../../styles/partials/colors' as *;
+@use '../../styles/partials/fonts' as *;
+@use '../../styles/partials/global' as *;
+@use '../../styles/partials/mixins' as *;
+
+.nextvideos{
+    @include mob{
+        width:70vw;
+        height:7vh;
+        &__title{
+            color:$mercury;
+            font-family: 'Avenir_bold';
+            font-size: 24px;
+            margin-left: 3vw;
+        }
+    }
+
+
+
+
+    @include tab{
+        width:70vw;
+        height:7vh;
+        &__title{
+            color:$mercury;
+            font-family: 'Avenir_bold';
+            font-size: 24px;
+            margin-left: 3vw;
+        }
+    }
+
+
+
+    @include des{
+        box-sizing: border-box;
+        padding: 0;
+        margin: -93vh 0 0 58vw;
+        width:41vw;
+        
+        border-left: 2px solid $mercury;
+        &__title{
+            color:$mercury;
+            font-family: 'Avenir_bold';
+            font-size: 24px;
+            margin-left: 1vw;
+        }
+    }
+}
+
+.nextvideo{
+    @include mob{
+        width:70vw;
+        height:20vw;
+        margin-left: 3vw;
+        position:relative;
+        margin-bottom: 16px;
+        &__img{
+            border-radius: 4px;
+            width:30vw;
+            height:20vw;
+            position:absolute;
+        }
+        &__title{
+            width:50%;
+            box-sizing: border-box;
+            display:-webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient:vertical;
+            overflow:hidden;
+            font-family: 'Avenir_bold';
+            font-size: 18px;
+            color:$brainflix-black;
+            position:absolute;
+            left:32vw;
+            top:1%;
+        }
+        &__uploader{
+            width:30%;
+            height:20%;
+            font-family: 'Avenir_reg';
+            font-size: 16px;
+            color:$brainflix-black;
+            position:absolute;
+            left:32vw;
+            top:52%;
+        }
+    }
+
+
+
+
+    @include tab{
+        width:70vw;
+        height:20vw;
+        margin-left: 3vw;
+        position:relative;
+        margin-bottom: 16px;
+        &__img{
+            border-radius: 4px;
+            width:30vw;
+            height:20vw;
+            position:absolute;
+        }
+        &__title{
+            width:50%;
+            box-sizing: border-box;
+            display:-webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient:vertical;
+            overflow:hidden;
+            font-family: 'Avenir_bold';
+            font-size: 18px;
+            color:$brainflix-black;
+            position:absolute;
+            left:32vw;
+            top:1%;
+        }
+        &__uploader{
+            width:30%;
+            height:20%;
+            font-family: 'Avenir_reg';
+            font-size: 16px;
+            color:$brainflix-black;
+            position:absolute;
+            left:32vw;
+            top:52%;
+        }
+    }
+
+
+
+
+    @include des{
+        width:15vh;
+        height:12vh;
+        margin-left: 1vw;
+        position:relative;
+        margin-bottom: 16px;
+       
+        &__img{
+            border-radius: 4px;
+            width:15vh;
+            height:10vh;
+            position:absolute;
+        }
+        &__title{
+            width:110%;
+            height:30%;
+            box-sizing: border-box;
+            display:-webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient:vertical;
+            overflow:hidden;
+            font-family: 'Avenir_bold';
+            font-size: 18px;
+            color:$brainflix-black;
+            position:absolute;
+            left:110%;
+            top:-0.5%;
+            
+        }
+        &__uploader{
+            width:55%;
+            height:15%;
+            font-family: 'Avenir_reg';
+            font-size: 16px;
+            color:$brainflix-black;
+            position:absolute;
+            left:110%;
+            top:38%;
+           
+        }
+    }
+}

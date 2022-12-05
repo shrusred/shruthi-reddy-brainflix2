@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "Avenir_reg";
+  src: url("../../assets/Font/Alternativefiles/AvenirNextLTPro.ttf") format("TrueType");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Avenir_bold";
+  src: url("../../assets/Font/Alternativefiles/AvenirNextLTProBold.ttf") format("TrueType");
+  font-weight: 700;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .desc {
+    margin: 16x 0 0 0;
+    padding: 0 0 0 3vw;
+    width: 80vw;
+    height: 30vh;
+    font-size: 16px;
+    font-family: "Avenir_reg";
+    color: #000000;
+    line-height: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .desc {
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+    margin-bottom: 2.25rem;
+    width: 100vw;
+    height: 20vh;
+    font-size: 18px;
+    font-family: "Avenir_reg";
+    color: #000000;
+  }
+}
+@media (min-width: 1280px) {
+  .desc {
+    padding-left: 3vw;
+    margin-top: 1.5rem;
+    width: 55vw;
+    height: 12vh;
+    font-size: 18px;
+    font-family: "Avenir_reg";
+    color: #000000;
+  }
+}/*# sourceMappingURL=Description.css.map */
