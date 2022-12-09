@@ -4,92 +4,262 @@
 @use '../../styles/partials/global' as *;
 @use '../../styles/partials/mixins' as *;
 
-.uploadpage{
-    @include mob{
-        &__title{
-            font-family: 'Avenir_reg';
-            font-weight:600;
-            color: $brainflix-darkblack;
-            margin-left: 1rem;
-        }
-        &__thumbnail{
-            font-family: 'Avenir_bold';
-            font-weight: bolder;
-            color:$silver;
-            margin: 0.01rem 0 0 1rem;
-            padding:0;
-            
-        }
-        &__video{
-            object-fit: cover;
-            width:95vw;
-            height:50vh;
-            margin:0 1rem 0 1rem;
-            border-radius: 0.25rem;
-        }
-        &__form{
-            margin:1rem 0 0 1rem;
-           
-           
-            &--label{
-                width:90%;
-                height: 3vh;
-                display: inline-block;
-                font-family: 'Avenir_reg';
-                font-weight: bolder;
-                color: $silver;
-               
-                margin: 0 0 0.5rem 0;
-            }
-            &--input1{
-                width:90%;
-                height: 5vh;
-                display: inline-block;
-                border-radius: 0.25rem;
-                border: 1px solid $silver;
-                background-color: $alabaster;
-                margin-bottom: 1.5rem;
-            }
-            &--input1::placeholder{
-                    margin-left: 1rem;
-                    padding-left: 0.5rem;
-                    font-family: 'Avenir_reg';
-                    font-size: 0.75rem;
-            }
-            &--input2{
-                width:90%;
-                height: 10vh;
-                display: inline-block;
-                border-radius: 0.25rem;
-                border: 1px solid $silver;
-                background-color: $alabaster;
-                margin-bottom: 1.5rem;;
-            }
-            &--input2::placeholder{
-                    margin-left: 1rem;
-                    font-family: 'Avenir_reg';
-                    padding-left: 0.5rem;
-                    font-size: 0.75rem;
-            }
-            &--button{
-                background-color: $brainflix-blue;
-                color:$white;
-                font-family: 'Avenir_bold';
-                font-weight: 700;
-                font-size: 1.375rem;
-                width:90%;
-                height: 8vh;
-                margin: 1rem 0 0 0;
-                border: none;
-                border-radius: 0.25rem;
-            }
-        }
-        &__cancel{
-            margin: 2.5rem 50vw 0 40vw;
-            font-weight: 700;
-            font-family: 'Avenir_reg';
-            color: $brainflix-blue;
-            font-size: 1.25rem;
-        }
+.uploadpage {
+  @include mob {
+    &__title {
+      font-family: "Avenir_reg";
+      font-weight: 600;
+      color: $brainflix-darkblack;
+      margin-left: 1rem;
     }
+    &__thumbnail {
+      font-family: "Avenir_bold";
+      font-weight: bolder;
+      color: $silver;
+      margin: 0.01rem 0 0 1rem;
+      padding: 0;
+    }
+    &__video {
+      object-fit: cover;
+      width: 95vw;
+      height: 50vh;
+      margin: 0 1rem 0 1rem;
+      border-radius: 0.25rem;
+    }
+    &__form {
+      margin: 1rem 0 0 1rem;
+
+      &--label {
+        width: 90%;
+        height: 3vh;
+        display: inline-block;
+        font-family: "Avenir_reg";
+        font-weight: bolder;
+        color: $silver;
+
+        margin: 0 0 0.5rem 0;
+      }
+      &--input1 {
+        width: 90%;
+        height: 5vh;
+        display: inline-block;
+        border-radius: 0.25rem;
+        border: 1px solid $silver;
+        background-color: $alabaster;
+        margin-bottom: 1.5rem;
+      }
+      &--input1::placeholder {
+        margin-left: 1rem;
+        padding-left: 0.5rem;
+        font-family: "Avenir_reg";
+        font-size: 0.75rem;
+      }
+      &--input2 {
+        width: 90%;
+        height: 10vh;
+        display: inline-block;
+        border-radius: 0.25rem;
+        border: 1px solid $silver;
+        background-color: $alabaster;
+        margin-bottom: 1.5rem;
+      }
+      &--input2::placeholder {
+        margin-left: 1rem;
+        font-family: "Avenir_reg";
+        padding-left: 0.5rem;
+        font-size: 0.75rem;
+      }
+      &--button {
+        background-color: $brainflix-blue;
+        color: $white;
+        font-family: "Avenir_bold";
+        font-weight: 700;
+        font-size: 1.375rem;
+        width: 90%;
+        height: 8vh;
+        margin: 1rem 0 0 0;
+        border: none;
+        border-radius: 0.25rem;
+      }
+    }
+    &__cancel {
+      margin: 2.5rem 50vw 0 40vw;
+      font-weight: 700;
+      font-family: "Avenir_reg";
+      color: $brainflix-blue;
+      font-size: 1.25rem;
+    }
+  }
+
+  @include tab {
+    margin-left: 2.25rem;
+    &__title {
+      height: 15vh;
+      font-size: 32px;
+      font-family: "Avenir_bold";
+      border-bottom: 1px solid $silver;
+      margin-bottom: 3vh;
+    }
+    &__thumbnail {
+      color: $silver;
+    }
+    &__video {
+      object-fit: cover;
+      width: 60vw;
+      height: 45vh;
+      border-radius: 0.25rem;
+    }
+
+    &__form {
+      margin: 1rem 0 0 1rem;
+
+      &--label {
+        width: 90%;
+        height: 3vh;
+        display: inline-block;
+        font-family: "Avenir_reg";
+        font-weight: bolder;
+        color: $silver;
+
+        margin: 0 0 0.5rem 0;
+      }
+      &--input1 {
+        width: 90%;
+        height: 5vh;
+        display: inline-block;
+        border-radius: 0.25rem;
+        border: 1px solid $silver;
+        background-color: $alabaster;
+        margin-bottom: 1.5rem;
+      }
+      &--input1::placeholder {
+        margin-left: 1rem;
+        padding-left: 0.5rem;
+        font-family: "Avenir_reg";
+        font-size: 0.75rem;
+      }
+      &--input2 {
+        width: 90%;
+        height: 20vh;
+        display: inline-block;
+        border-radius: 0.25rem;
+        border: 1px solid $silver;
+        background-color: $alabaster;
+      }
+      &--input2::placeholder {
+        margin-left: 1rem;
+        font-family: "Avenir_reg";
+        padding-left: 0.5rem;
+        font-size: 0.75rem;
+      }
+      &--button {
+        background-color: $brainflix-blue;
+        color: $white;
+        font-family: "Avenir_bold";
+        font-weight: 700;
+        font-size: 1.375rem;
+        width: 30%;
+        height: 8vh;
+        margin: 1rem 0 0 0;
+        border: none;
+        border-radius: 0.25rem;
+        margin-left: 55vw;
+      }
+    }
+    &__cancel {
+      margin: -5vh 50vw 0 40vw;
+      font-weight: 700;
+      font-family: "Avenir_reg";
+      color: $brainflix-blue;
+      font-size: 1.25rem;
+    }
+  }
+
+  @include des {
+    margin-left: 2.25rem;
+    &__title {
+      height: 15vh;
+      font-size: 32px;
+      font-family: "Avenir_bold";
+      border-bottom: 1px solid $silver;
+      border-top: 1px solid $silver;
+      margin-bottom: 3vh;
+      margin-top: 3vh;
+      padding-top: 3vh;
+    }
+    &__thumbnail {
+      color: $silver;
+    }
+    &__video {
+      object-fit: cover;
+      width: 35vw;
+      height: 45vh;
+      border-radius: 0.25rem;
+    }
+
+    &__form {
+      margin: -45vh 0 0 45vw;
+      width: 50vw;
+
+      &--label {
+        width: 90%;
+        height: 3vh;
+        display: inline-block;
+        font-family: "Avenir_reg";
+        font-weight: bolder;
+        color: $silver;
+
+        margin: 0 0 0.5rem 0;
+      }
+      &--input1 {
+        width: 90%;
+        height: 5vh;
+        display: inline-block;
+        border-radius: 0.25rem;
+        border: 1px solid $silver;
+        background-color: $alabaster;
+        margin-bottom: 1.5rem;
+      }
+      &--input1::placeholder {
+        margin-left: 1rem;
+        padding-left: 0.5rem;
+        font-family: "Avenir_reg";
+        font-size: 0.75rem;
+      }
+      &--input2 {
+        width: 90%;
+        height: 20vh;
+        display: inline-block;
+        border-radius: 0.25rem;
+        border: 1px solid $silver;
+        background-color: $alabaster;
+      }
+      &--input2::placeholder {
+        margin-left: 1rem;
+        font-family: "Avenir_reg";
+        padding-left: 0.5rem;
+        font-size: 0.75rem;
+      }
+      &--button {
+        background-color: $brainflix-blue;
+        color: $white;
+        font-family: "Avenir_bold";
+        font-weight: 700;
+        font-size: 1.375rem;
+        width: 30%;
+        height: 8vh;
+        margin: 1rem 0 0 0;
+        border: none;
+        border-radius: 0.25rem;
+        margin-left: 30vw;
+      }
+    }
+    &__cancel {
+      margin: -5vh 50vw 0 60vw;
+      font-weight: 700;
+      font-family: "Avenir_reg";
+      color: $brainflix-blue;
+      font-size: 1.25rem;
+    }
+  }
 }
