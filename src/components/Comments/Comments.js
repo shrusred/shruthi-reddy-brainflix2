@@ -1,6 +1,6 @@
 import "../Comments/Comments.css";
 function Comments(props) {
-  console.log("COMMENTS:", props.activeVideo.comments);
+  console.log("COMMENTS:", props.activeVideo);
   const arr_comments = props.activeVideo.comments;
 
   function date(timestamp) {
@@ -12,7 +12,7 @@ function Comments(props) {
     });
   }
 
-  const comm = arr_comments.map((c) => {
+  const comm = arr_comments?.map((c) => {
     return (
       <div key={c.id} className="comments">
         <div className="comments__displaypic"></div>

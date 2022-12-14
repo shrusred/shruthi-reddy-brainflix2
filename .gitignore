@@ -21,3 +21,48 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+#   // function getAPIKey() {
+#   //   //this function returns a promise
+#   //   //if(api_key_returned===''){//if api key is not already there
+#   //   console.log(URL + "register");
+#   //   if (API_KEY === "") {
+#   //     //if api key is not already there
+#   //     return axios.get(URL + "register").then((response) => {
+#   //       //getting apikey
+#   //       console.log(response);
+#   //       //api_key_returned=response.data.api_key;//set api key from call request to apikey variable
+#   //       API_KEY = response.data.api_key; //set api key from call request to apikey variable
+#   //       console.log("API_KEY");
+#   //       //console.log(api_key_returned);
+#   //       console.log(API_KEY);
+#   //       // return Promise.resolve(api_key_returned); //return a promise
+#   //       return Promise.resolve(API_KEY); //return a promise
+#   //     });
+#   //   } else {
+#   //     //return Promise.resolve(api_key_returned); //return existing key through promise
+#   //     return Promise.resolve(API_KEY); //return a promise
+#   //   }
+#   // }
+
+#   // useEffect(() => {
+#   //   getAPIKey();
+#   // }, []);
+
+#   //  function getVideo(){
+#   //    return getAPIKey()
+#   //      .then((api_key)=>{
+#   //        console.log(api_key)
+#   //        return axios.get(URL+'videos'+`?api_key=${api_key}`)
+#   //          .then((result) =>{
+#   //              console.log("this is inside the getVideos function");
+#   //              let arrayofvideos=result.data;//array of videos
+#   //              console.log(arrayofvideos)
+#   //              const default_nextvideos =arrayofvideos.filter(function( nv ) {
+#   //                   return nv.id!==activeVideo.id
+#   //             });
+#   //             setNextVideos(default_nextvideos)
+#   //          });
+#   //      });
+#   //  };
