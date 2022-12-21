@@ -22,12 +22,17 @@ function ActiveVideoDisplay() {
   const [nextVideos, setNextVideos] = useState([]); //array of information next video requires; id,img url, title, uploader (full-currently active)
 
   const URL = "https://project-2-api.herokuapp.com/";
+  const URL_local = "http://localhost:8080/";
 
   const API_KEY = "f17b9481-7494-4280-818d-ca483d2a082e";
 
+  // axios.get("http://localhost:8080/videos").then((res) => {
+  //   console.log(res);
+  // });
+
   function getMainVideo(avid) {
     //sets the activeVideo object based on activeVideoID
-    axios.get(URL + "videos/" + avid + `?api_key=${API_KEY}`).then((result) => {
+    axios.get(URL_local + "videos/" + avid).then((result) => {
       console.log(result);
       setActiveVideoID(avid);
       setActiveVideo(result.data);
@@ -45,7 +50,7 @@ function ActiveVideoDisplay() {
     setActiveVideoID(videoid);
 
     axios
-      .get(URL + "videos/" + videoid + `?api_key=${API_KEY}`) //axios get
+      .get(URL_local + "videos/" + videoid) //axios get
       .then((result) => {
         getMainVideo(videoid);
         getVideo(videoid);
@@ -53,7 +58,7 @@ function ActiveVideoDisplay() {
   }, [videoid]);
 
   function getVideo(av) {
-    axios.get(URL + "videos" + `?api_key=${API_KEY}`).then((result) => {
+    axios.get(URL_local + "videos").then((result) => {
       console.log("this is inside the getVideos function", result.data);
       let arrayofvideos = result.data; //array of videos
       let default_nextvideos = arrayofvideos.filter(function (nv) {

@@ -2,8 +2,27 @@ import Header from "../Header/Header";
 import Row from "../Row/Row.js";
 import Upload from "../Upload/Upload";
 import "../UploadPage/UploadPage.scss";
+import { useRef } from "react";
+import axios from "axios";
 
 function UploadPage() {
+  const formRef = useRef();
+
+  const addVideo = (e) => {
+    e.preventDefault();
+    const video_post_data = {
+      title: formRef.current.addtitle.value,
+      description: formRef.current.adddesc.value,
+    };
+    axios
+      .post("http://localhost:8080/videos", video_post_data)
+      .then((response) => {
+        console.log(response.data);
+        console.log(typeof response.data);
+        return response.data;
+      });
+  };
+
   return (
     <>
       <div className="uploadpage">
@@ -15,7 +34,7 @@ function UploadPage() {
           poster="https://i.imgur.com/l2Xfgpl.jpg"
         ></video>
 
-        <form className="uploadpage__form">
+        <form className="uploadpage__form" onSubmit={addVideo} ref={formRef}>
           <label className="uploadpage__form--label" for="title">
             TITLE YOUR VIDEO
           </label>
